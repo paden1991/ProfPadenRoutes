@@ -1,6 +1,6 @@
 local _,R=...
 _G.ProfPadenRoutes=R
-R.version='0.20.17-rc1'
+R.version='0.20.18-rc1'
 local sqrt,floor=math.sqrt,math.floor
 local function distance(a,b,w,h)return sqrt(((a.x-b.x)*w)^2+((a.y-b.y)*h)^2)end
 R.Distance=distance

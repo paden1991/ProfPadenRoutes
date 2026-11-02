@@ -4,6 +4,20 @@ local floor,min=math.floor,math.min
 -- Personal successful loot visits, not community popularity or spawn rates.
 -- Imported observation fields are deliberately not used as harvest counts.
 local function public(v) return not issecretvalue or not issecretvalue(v) end
+local harvestObjects
+local function harvestObject(id)
+    if not harvestObjects then
+        harvestObjects={}
+        for _,prof in ipairs({'Mining','Herbalism'}) do
+            for _,entry in ipairs(P.GatherAtlas[prof] or {}) do
+                for _,source in ipairs(entry.sources or {}) do
+                    if source.kind=='object' and source.id and (source.method=='Mine' or source.method=='Herb') then harvestObjects[source.id]=true end
+                end
+            end
+        end
+    end
+    return harvestObjects[id]
+end
 function R:CaptureHarvestLoot()
     if self.harvestLoot or not GetLootSourceInfo or not GetNumLootItems or not C_Map then return end
     local map=C_Map.GetBestMapForUnit('player');local pos=map and self:PlayerPosition(map)
@@ -15,8 +29,8 @@ function R:CaptureHarvestLoot()
             local guid=sources[i]
             if public(guid) and type(guid)=='string' then
                 local id=tonumber(guid:match('^GameObject%-%d+%-%d+%-%d+%-%d+%-(%d+)%-'))
-                local types=id and P.GatherMateObjectTypes[id];local typ=types and #types==1 and types[1];local info=typ and P.GatherMateNodeTypes[typ]
-                if info and (info.category=='Mining' or info.category=='Herb Gathering') then
+                if id and harvestObject(id) then
+                    local typ='object:'..id
                     slots[slot]=slots[slot] or {};slots[slot][#slots[slot]+1]={guid=guid,typ=typ,map=map,x=pos.x,y=pos.y}
                 end
             end
@@ -55,15 +69,18 @@ function R:HarvestIndex(map,w,h)
     return index
 end
 function R:HarvestWeight(area,n,w,h,index)
-    local types=area.sourceKind=='object' and P.GatherMateObjectTypes[area.sourceID]
-    local typ=types and #types==1 and types[1]
-    if not typ or not index then return 1 end
+    if area.sourceKind~='object' or not area.sourceID or not index then return 1 end
+    local types={'object:'..area.sourceID}
+    -- Preserve earlier personal history keyed by GatherMate's node IDs when
+    -- that optional integration is present. New visits use game object IDs.
+    local legacy=P.GatherMateObjectTypes and P.GatherMateObjectTypes[area.sourceID]
+    if legacy and #legacy==1 then types[#types+1]=legacy[1] end
     local x,y=n.x/100,n.y/100;local bx,by=floor(x*w/25),floor(y*h/25);local count=0
-    for dx=-1,1 do for dy=-1,1 do
+    for _,typ in ipairs(types) do for dx=-1,1 do for dy=-1,1 do
         for _,v in ipairs(index[typ..':'..(bx+dx)..':'..(by+dy)] or {}) do
             if ((x-v.x)*w)^2+((y-v.y)*h)^2<=625 then count=count+v.count end
         end
-    end end
+    end end end
     -- Bounded preference; distance, unique-site density and exclusions still dominate.
     return 1+min(.5,math.log(1+count)*.15)
 end

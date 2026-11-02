@@ -2,7 +2,7 @@
 ## Title: ProfPaden - Walking Routes
 ## Notes: Toggleable farming circuits using ProfPaden's source atlas and navigation arrow.
 ## Author: Paden
-## Version: 0.20.17-rc1
+## Version: 0.20.18-rc1
 ## Dependencies: ProfPaden
 ## OptionalDeps: OpenMap
 Planner.lua

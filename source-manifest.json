@@ -1,6 +1,6 @@
 {
   "addon": "ProfPadenRoutes",
-  "version": "0.20.17-rc1",
+  "version": "0.20.18-rc1",
   "interface": 16001,
   "files": [
     {
@@ -65,8 +65,8 @@
     },
     {
       "path": "Harvests.lua",
-      "bytes": 3937,
-      "sha256": "36942dd9c8e8d901c8cbe1791576a67e3ff464d38dd5ced35605bbbeddf9cb9e",
+      "bytes": 4623,
+      "sha256": "c9f62c77ebbe7b924ee9d36285756bdb3147134827c4a3e7576f1ea0071b0eeb",
       "external": false
     },
     {
@@ -96,13 +96,13 @@
     {
       "path": "Planner.lua",
       "bytes": 1189,
-      "sha256": "eb2187ef55af2da23206af2ef94532a594e53cc04424125af6647e1514912c23",
+      "sha256": "3f2316069f848b3b917b2e700d6290d2ac0709b0a94cdfff8534a11b88ef7cc0",
       "external": false
     },
     {
       "path": "ProfPadenRoutes.toc",
       "bytes": 605,
-      "sha256": "83a1a965f586874ad50cd67fab225ee03d187b8cbc70518e3f46d785ea7cdad7",
+      "sha256": "b6f5a87e77eb6e8063d3d3250457e212077b432191101aef2aca02bda574b3ee",
       "external": false
     },
     {
@@ -161,8 +161,8 @@
     },
     {
       "path": "THIRD_PARTY.md",
-      "bytes": 2702,
-      "sha256": "cd10e28c9d93d44bd15b67ad4124958ccbc3fbf5ccdcd51bfe12a4e147168906",
+      "bytes": 2596,
+      "sha256": "0e17e72c0b5e7b941b5aafe637451cb965911b083168e68194e114e73709f396",
       "external": false
     }
   ]

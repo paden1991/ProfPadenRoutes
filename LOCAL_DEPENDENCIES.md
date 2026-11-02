@@ -1,1 +1,1 @@
-No omitted runtime inputs in this version. Compiled source data is included with attribution in THIRD_PARTY.md. NodeSight and OpenMap are separate optional addons. ProfPadenRoutes requires ProfPaden.
+GatherMate node coverage requires separately installed, enabled Forever versions of GatherMate2 and GatherMate2_Data. These are optional dependencies: ProfPaden and Routes retain their own atlas and core features without them. GatherMate2 alone supplies personally collected records. NodeSight and OpenMap are also optional. ProfPadenRoutes requires ProfPaden.
