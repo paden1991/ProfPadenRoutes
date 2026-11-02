@@ -1,0 +1,163 @@
+{
+  "addon": "ProfPadenRoutes",
+  "version": "0.20.16-rc1",
+  "interface": 16001,
+  "files": [
+    {
+      "path": "Avoidance.lua",
+      "bytes": 2812,
+      "sha256": "0ee0fb9e93bfe1cb2135407a16f805c7b7e66164360f70b67eabbd39944bc693",
+      "external": false
+    },
+    {
+      "path": "CaveData.lua",
+      "bytes": 3501,
+      "sha256": "069ff4c159d89100beb57331b39e2bc0aa7d4e115010e3777ec17b8f6e4dbb8f",
+      "external": false
+    },
+    {
+      "path": "Circuit.lua",
+      "bytes": 5487,
+      "sha256": "fe45dd326555d7e6ccdbab64d58e7d300207741eb4f26b5d0d96dc1a5ab612f7",
+      "external": false
+    },
+    {
+      "path": "Contour.lua",
+      "bytes": 12713,
+      "sha256": "e28906236681bcac143cfcbe77f62aa3703474644e2fafd6191403a9cadc9f62",
+      "external": false
+    },
+    {
+      "path": "Density.lua",
+      "bytes": 24587,
+      "sha256": "4c4dfc6977417952f25a324e2135e3e559bae3187c7bafc37a93bbd87d506b8e",
+      "external": false
+    },
+    {
+      "path": "Elevation.lua",
+      "bytes": 4823,
+      "sha256": "429a6e057ddc37604917a192eb37ad778cdb03b7cb7ccfce762903ed902fab79",
+      "external": false
+    },
+    {
+      "path": "ElevationData.lua",
+      "bytes": 8961052,
+      "sha256": "9d1d6b4ddfb77d79085a9767462a99fc2630f8df37804ea4f91bfaa425621f92",
+      "external": true
+    },
+    {
+      "path": "FlightStarts.lua",
+      "bytes": 3806,
+      "sha256": "f83390727fbd3470facc7cc9f3d8f64dd1d2b9e8b921c440b5fd89d9f066dc75",
+      "external": false
+    },
+    {
+      "path": "Geometry.lua",
+      "bytes": 3607,
+      "sha256": "d25aa8cff6005b193190274123034626fc7aeaa172cbf07f2e61fff3d4db1ebe",
+      "external": false
+    },
+    {
+      "path": "GroundData.lua",
+      "bytes": 655860,
+      "sha256": "f66753fc875a81941c304cbb02b2bccc981b9ea6c7702dcf3f3895512224bfbd",
+      "external": false
+    },
+    {
+      "path": "Harvests.lua",
+      "bytes": 3937,
+      "sha256": "36942dd9c8e8d901c8cbe1791576a67e3ff464d38dd5ced35605bbbeddf9cb9e",
+      "external": false
+    },
+    {
+      "path": "MiniTerrain.lua",
+      "bytes": 7051,
+      "sha256": "26086faaedc5d868a37d6c49cba2acab7bf558b4f1a6845d03ae0f1a418fc5be",
+      "external": false
+    },
+    {
+      "path": "MiniTerrainData.lua",
+      "bytes": 755902,
+      "sha256": "1a7d0c11bac2ddbc3985d7f25a173a363eb0af36ea143ff99b6e79b76926f636",
+      "external": false
+    },
+    {
+      "path": "Minimap.lua",
+      "bytes": 2368,
+      "sha256": "5ee815b121182ab610a6cbad621774f65acf5b4c965ec76f200f1093b99192c9",
+      "external": false
+    },
+    {
+      "path": "OpenMap.lua",
+      "bytes": 2291,
+      "sha256": "1c9cf12088f89a1d5f2117f7f647ddce77661fdff06737df380d8a31df7a0fb3",
+      "external": false
+    },
+    {
+      "path": "Planner.lua",
+      "bytes": 1189,
+      "sha256": "b618efa71f49ce4efdac7a83dbec6ad734cc4bf1a560c3f2c50e89e55de39948",
+      "external": false
+    },
+    {
+      "path": "ProfPadenRoutes.toc",
+      "bytes": 605,
+      "sha256": "500d1c4adeb53cc6676e64843583ad53626da3b63093f8efe6491c8095af930c",
+      "external": false
+    },
+    {
+      "path": "Retrace.lua",
+      "bytes": 4475,
+      "sha256": "f160d145ea43fde527fc42538d4fec950d9add10ca280e244ee29eeeb6635e85",
+      "external": false
+    },
+    {
+      "path": "RoadData.lua",
+      "bytes": 67798,
+      "sha256": "6b32a3f5187bb17d9c8ad889ac22a4835207ba8f00bde92e828a76370c535623",
+      "external": false
+    },
+    {
+      "path": "Roads.lua",
+      "bytes": 2793,
+      "sha256": "0943d42388e1bc96d9defda9d31ee159b3f7bb1db795d18fc27b5e18b7e4d46f",
+      "external": false
+    },
+    {
+      "path": "Routes.lua",
+      "bytes": 10304,
+      "sha256": "0b4d5f5427b8f40f0c654380169324d39df82c61130aaa7a66f8d2508a4edce2",
+      "external": false
+    },
+    {
+      "path": "Terrain.lua",
+      "bytes": 5243,
+      "sha256": "1cd1d6af84303faf96a521bc5f5f88e67417847324e62c8e323a8c1f9701b283",
+      "external": false
+    },
+    {
+      "path": "TerrainData.lua",
+      "bytes": 8990,
+      "sha256": "50365af5ee5c07ddfec69066c9d56938825da01aff90778011effa86017b4ae7",
+      "external": false
+    },
+    {
+      "path": "UI.lua",
+      "bytes": 10881,
+      "sha256": "3b514be4138aab5ce5c7e8e41a1ecec1b7e7da438c38289c4d19e174590f9de2",
+      "external": false
+    },
+    {
+      "path": "Water.lua",
+      "bytes": 2991,
+      "sha256": "973edfafd377074aae68ae26adc266c83d1db22c110e079d115f0d5357a4f294",
+      "external": false
+    },
+    {
+      "path": "WaterData.lua",
+      "bytes": 66952,
+      "sha256": "9046c156e22221eaf85dbd77d794d5846bbd0b04b1ed5b75c1708213ee34298e",
+      "external": false
+    }
+  ]
+}

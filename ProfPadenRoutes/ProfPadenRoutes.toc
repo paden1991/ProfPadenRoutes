@@ -1,0 +1,33 @@
+## Interface: 16001
+## Title: ProfPaden - Walking Routes
+## Notes: Toggleable farming circuits using ProfPaden's source atlas and navigation arrow.
+## Author: Paden
+## Version: 0.20.16-rc1
+## Dependencies: ProfPaden
+## OptionalDeps: OpenMap
+Planner.lua
+TerrainData.lua
+MiniTerrainData.lua
+MiniTerrain.lua
+ElevationData.lua
+Elevation.lua
+Terrain.lua
+CaveData.lua
+Avoidance.lua
+WaterData.lua
+Water.lua
+Harvests.lua
+RoadData.lua
+GroundData.lua
+Roads.lua
+Retrace.lua
+Contour.lua
+Circuit.lua
+FlightStarts.lua
+Density.lua
+Geometry.lua
+Minimap.lua
+Routes.lua
+UI.lua
+
+OpenMap.lua
