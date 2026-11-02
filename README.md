@@ -8,6 +8,10 @@ Release candidate / beta. Live-game acceptance is still required.
 
 Requires [ProfPaden](https://github.com/paden1991/ProfPaden), installed as a separate addon.
 
+## WowUp release status
+
+An installable public WowUp release is on hold while redistribution permission for the local-only dependencies is resolved. Full functionality is being preserved; no incomplete or reduced-functionality ZIP is published. The public release builder refuses to package unresolved external files.
+
 ## Installation
 
 This is a source repository with **1 local-only dependency files omitted**. A download of this repository alone is not the complete local addon bundle. Use a matching, lawfully obtained complete `ProfPadenRoutes` folder as the dependency input:
