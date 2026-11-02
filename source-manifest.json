@@ -1,6 +1,6 @@
 {
   "addon": "ProfPadenRoutes",
-  "version": "0.20.16-rc1",
+  "version": "0.20.17-rc1",
   "interface": 16001,
   "files": [
     {
@@ -43,7 +43,7 @@
       "path": "ElevationData.lua",
       "bytes": 8961052,
       "sha256": "9d1d6b4ddfb77d79085a9767462a99fc2630f8df37804ea4f91bfaa425621f92",
-      "external": true
+      "external": false
     },
     {
       "path": "FlightStarts.lua",
@@ -96,13 +96,13 @@
     {
       "path": "Planner.lua",
       "bytes": 1189,
-      "sha256": "b618efa71f49ce4efdac7a83dbec6ad734cc4bf1a560c3f2c50e89e55de39948",
+      "sha256": "eb2187ef55af2da23206af2ef94532a594e53cc04424125af6647e1514912c23",
       "external": false
     },
     {
       "path": "ProfPadenRoutes.toc",
       "bytes": 605,
-      "sha256": "500d1c4adeb53cc6676e64843583ad53626da3b63093f8efe6491c8095af930c",
+      "sha256": "83a1a965f586874ad50cd67fab225ee03d187b8cbc70518e3f46d785ea7cdad7",
       "external": false
     },
     {
@@ -157,6 +157,12 @@
       "path": "WaterData.lua",
       "bytes": 66952,
       "sha256": "9046c156e22221eaf85dbd77d794d5846bbd0b04b1ed5b75c1708213ee34298e",
+      "external": false
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "bytes": 2702,
+      "sha256": "cd10e28c9d93d44bd15b67ad4124958ccbc3fbf5ccdcd51bfe12a4e147168906",
       "external": false
     }
   ]
